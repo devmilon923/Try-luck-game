@@ -1,33 +1,83 @@
-#parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-}
-.div {
-  background-color: blueviolet;
-  color: white;
-  text-align: center;
-  
-  padding: 30px;
-  min-width: 100px;
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f0f0f0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  justify-self: center;
-  align-self: center;
-  cursor: pointer;
-}
-.container {
-  width: auto;
-  margin: 0 auto;
-  margin-top: 50px;
-  background-color: beige;
-  padding: 20px;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#btn{
-    margin: 15px 0px;
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #555;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#low-notice, #win-notice {
+  font-size: 14px;
+
+  color: red;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+#win-notice{
+
+  color: green;
+}
+#btn {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #0056b3;
+}
+
+#parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.div {
+  background-color: #e4e0e1;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.div:hover {
+  background-color: #d6c0b3;
 }

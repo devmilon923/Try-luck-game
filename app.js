@@ -59,10 +59,17 @@ document.getElementById("parent").addEventListener("click", function (e) {
             win.innerText = "";
           }, 2000);
           target.innerText = "Win 20$";
+          target.style.color = "white";
+          target.style.fontSize = "10px";
+
+
         } else {
           win.innerText = "";
           target.style.backgroundColor = "red";
-          // console.log(getLocal);
+          target.style.color = "white";
+          target.style.fontSize = "10px";
+
+     
           amountDr(getLocal);
 
           balance.innerText = getLocal;
