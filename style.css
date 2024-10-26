@@ -81,3 +81,16 @@ h3 {
 .div:hover {
   background-color: #d6c0b3;
 }
+
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  
+  background-color: beige;
+  padding: 20px;
+}
+
+#btn{
+    margin: 15px 0px;
+}
